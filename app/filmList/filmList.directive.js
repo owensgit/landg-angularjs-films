@@ -25,15 +25,17 @@
         $scope,
         filmsService) {
 
-
-        filmsService.getFilms().then(function (data) {
-            $scope.films = data;
-        });
-
-        $scope.showFilmDetail = function (filmId) {
-            
-            return false;
+        var getFilms = function () {
+            filmsService.getFilms().then(function (data) {
+                $scope.films = data;
+            });
         };
+
+        getFilms();
+
+        return {
+            getFilms: getFilms
+        }
 
     };
 

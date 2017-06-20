@@ -23,6 +23,6 @@ You can start a simple HTTP server with the following command:
 
 ## Unit tests
 
-Unit tests were not finished for this project, but the starting file are here for reference and for something to build upon. Even though they don't do anything, you can run the unit tests with this command:
+Unit tests were not complete for this project, but the starting files are here for reference and for something to build upon. You can run the tests with:
 
 `npm test`
