@@ -24,7 +24,6 @@ The app should then be running on localhost:8000.
 
 
 ## Unit tests
-
-Unit tests were not complete for this project, but the starting files are here for reference and for something to build upon. You can run the tests with:
+There is a basic unit test for the filmList directive, which is intended as a starting point for future unit tests. You can run the tests with:
 
 `npm test`
