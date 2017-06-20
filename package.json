@@ -8,8 +8,8 @@
   },
   "main": "app/index.html",
   "scripts": {
-    "start": "http-server app/",
-    "test": "./node_modules/karma/bin/karma start"
+    "start": "http-server ./app -a localhost -p 8000 -c-1",
+    "test": "karma start karma.conf.js"
   },
   "author": "Owen Evans",
   "license": "ISC",
