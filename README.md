@@ -2,23 +2,25 @@
 
 This is a simple AngularJS app that displays a list of the top 6 movies as listed on IMBD.
 
-#### Changing the API URL
+### Changing the API URL
 
-The API URL can be easily changed in `app/core/config.js`.
+The API URL can be easily changed in `app/core/config.js`. At the moment it points to a local JSON file.
 
-#### Installing the app
+### Installing the app
 
-Clone/download this repo and run:
+Clone/download this repo onto your computer and run the following commands from the root directory of the project:
 
 `npm install`
 
 `bower install`
 
-#### Starting the app
+### Starting the app
 
 You can start a simple HTTP server with the following command:
 
-`npm start
+`npm start`
+
+The app should then be running on localhost:8000.
 
 
 ## Unit tests
