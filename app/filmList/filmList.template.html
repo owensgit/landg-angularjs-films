@@ -1,5 +1,5 @@
 <div class="col-sm-4">
-    <div class="panel panel-default film-list">
+    <div class="panel panel-default film-list hidden-xs">
         <div class="panel-heading"><strong>Select a film</strong></div>
         <div class="panel-body">
         <ul class="list-group hidden-sm-down">
@@ -11,5 +11,20 @@
         </ul>
         </div>
     </div>
+    <div class="dropdown films-dropdown hidden-s hidden-m hidden-lg">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select a film
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li ng-repeat="film in films" class="list-group-item">
+                <a href="/#!/film/{{film.id}}">
+                    {{film.title}}
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
+
+
 
