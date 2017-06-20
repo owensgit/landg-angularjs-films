@@ -2,9 +2,14 @@
   "name": "landg-angularjs-films",
   "version": "1.0.0",
   "description": "A simple Angular JS app that shows a list of films that users can browse and view more details for",
-  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:owensgit/landg-angularjs-films.git"
+  },
+  "main": "app/index.html",
   "scripts": {
-    "test": "test"
+    "start": "http-server app/",
+    "test": "./node_modules/karma/bin/karma start"
   },
   "author": "Owen Evans",
   "license": "ISC",

@@ -1,0 +1,15 @@
+<div class="col-sm-4">
+    <div class="panel panel-default film-list">
+        <div class="panel-heading"><strong>Select a film</strong></div>
+        <div class="panel-body">
+        <ul class="list-group hidden-sm-down">
+            <li ng-repeat="film in films" class="list-group-item">
+                <a href="/#!/film/{{film.id}}">
+                    {{film.title}}
+                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+

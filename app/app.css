@@ -1,0 +1,59 @@
+body {
+    padding: 5px;
+    font-size: 1.5em;
+}
+@media (max-width: 750px) {
+    .page-header {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 30px;
+        font-size: 1.7em;
+    }
+}
+
+.film-list li {
+    padding: 0;
+}
+.film-list a {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+}
+.film-list a:hover {
+    background: #f0f0f0;
+    text-decoration: none;
+}
+
+.cover-image {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 150px;
+    min-height: 150px;
+}
+@media (min-width: 800px) {
+    .cover-image {
+        width: 200px;
+        min-height: 200px;
+    }
+}
+@media (min-width: 1000px) {
+    .cover-image {
+        width: 250px;
+        min-height: 375px;
+    }
+}
+
+.film-title {
+    margin: 0; padding: 0;
+}
+
+@media (min-width: 900px) {
+    .film-description {
+        padding-right: 40px;
+    }
+}

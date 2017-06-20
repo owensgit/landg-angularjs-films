@@ -6,11 +6,34 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="core/_initialiser.js"></script>
+    <script src="core/config.js"></script>
+    <script src="core/services/filmsService.js"></script>
+    
+    <script src="filmList/filmList.module.js"></script>
+    <script src="filmList/filmList.directive.js"></script>
+    <script src="filmDetail/filmDetail.module.js"></script>
+    <script src="filmDetail/filmDetail.directive.js"></script>
+    
     <script src="app.js"></script>
+    <script src="routes.js"></script>
   </head>
   <body ng-app="app">
 
-    <h1>Film list</h1>
+    <div class="page-header">
+          <h1>Top six films<small> from IMBD</small><span class="pull-right glyphicon glyphicon-film" aria-hidden="true"></span></h1>
+        </div>
+
+    <div class="row">
+
+        <div film-list></div>
+    
+        <div ng-view></div>
+   
+    </div>
+    
 
   </body>
 </html>

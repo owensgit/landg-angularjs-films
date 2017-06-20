@@ -1,17 +1,28 @@
 (function () {
-    var app = angular.module("films.core");
 
     var service = function (
         $rootScope,
-        $http) {
+        $http,
+        CONFIG) {
 
+        var films = [];
 
-        var getFilms = function () {
-            
+        var getFilms = function (callback) {
+            var req = {
+                method: 'GET',
+                url: CONFIG.filmsApiURL
+            }
+            var promise = $http(req).then(function (resp) {
+                films = resp.data.films;
+                return films;
+            });
+
+            return promise
         };
 
         return {
-            getFilms: getFilms
+            getFilms: getFilms,
+            films: films
         }
 
     };
@@ -19,8 +30,11 @@
     var factory = [
         "$rootScope",
         "$http",
+        "films.core.CONFIG",
         service
     ];
 
-    app.factory('films.core.filmsService', factory);
-})()
+    var module = angular.module("films.core");
+    module.factory('films.core.filmsService', factory);
+
+})();

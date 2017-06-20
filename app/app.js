@@ -1,3 +1,11 @@
+var mainController = [
+    function () {
+
+    }
+];
+
 angular.module('app', [
-    'filmsList'
+    'ngRoute',
+    'filmList',
+    'films.core'
 ]);
